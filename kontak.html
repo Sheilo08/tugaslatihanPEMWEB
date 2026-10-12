@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Utama.html</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* Banner / Image Atas */
+        .header-image {
+            width: 100%;
+            height: 200px;
+            border: 2px dashed #666;
+            background-color: #eaeaea;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            gap: 230px;               
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 12px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #004499;
+        }
+
+        /* Bagian Utama: 2 Kolom (Kiri & Kanan) */
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .column-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #fafafa;
+            border-radius: 6px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .card p a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card p a:hover {
+            text-decoration: underline;
+            color: #004499;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .main-content h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .main-content p {
+            text-align: justify;
+            line-height: 1.7;
+            font-size: 15px;
+            color: #444;
+        }
+
+        footer {
+            border-top: 2px solid #333;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            color: #555;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- BAGIAN BANNER / IMAGE ATAS -->
+        <div class="header-image">
+            <img src="../imageutama/banner.jpeg" alt="Banner Website">
+        </div>
+
+        <!-- Menu Navigasi -->
+        <div class="nav-links">
+            <a href="utama.html">Home</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+        <!-- Bagian Kotak Sosial Media & WhatsApp (2 Kiri, 2 Kanan) -->
+        <div class="content-section">
+            
+            <!-- ================= KOLOM KIRI (2 Kotak) ================= -->
+            <div class="column-group">
+                <div class="card">
+                    <p>Instagram: <a href="https://www.instagram.com/shei.mkbts_?psln=eDd0NnBvemJodjM4" target="_blank">@Shei.mkbts_</a></p>
+                </div>
+                <div class="card">
+                    <p>Tiktok: <a href="https://www.tiktok.com/@lovanky__?_r=1&_t=ZS-9AUpZ8BZhty">@Lovanky__</a></p>
+                </div>
+            </div>
+
+            <!-- ================= KOLOM KANAN (2 Kotak) ================= -->
+            <div class="column-group">
+                <div class="card">
+                    <p>WhatsApp: <a href="https://wa.me/qr/FHGFYUTDZG7MJ1" target="_blank">0856-0264-9798</a></p>
+                </div>
+                <div class="card">
+                    <p>Email: <a href="mailto : 252011086@asia.ac.id">kirim pesan disini om</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bagian Content Utama -->
+        <div class="main-content">
+            <h3>Content Informasi Kontak</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos veritatis eligendi, commodi at quisquam minima, alias facere ut voluptas sapiente explicabo a molestias dolor. Officia illo aspernatur commodi, harum exercitationem aperiam voluptate facilis deleniti tempora expedita ut voluptatibus quis?
+            </p>
+        </div>
+
+        <!-- Footer Copyright -->
+        <footer>
+            <p>Copyright &copy; 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utama.html</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* Banner / Image Atas */
+        .header-image {
+            width: 100%;
+            height: 200px;
+            border: 2px dashed #666;
+            background-color: #eaeaea;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            gap: 230px;               
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 12px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #004499;
+        }
+
+        /* Bagian Utama Produk: Dibagi 2 Kolom Besar (Kiri & Kanan) */
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Wadah untuk menumpuk 3 produk secara vertikal di masing-masing kolom */
+        .column-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            background-color: #fafafa;
+        }
+
+        /* Kotak Foto Produk */
+        .product-img {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #999;
+            background-color: #e0e0e0;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-desc {
+            flex-grow: 1;
+        }
+
+        .card-desc h4 {
+            margin-bottom: 5px;
+            color: #222;
+            font-size: 15px;
+        }
+
+        .card-desc p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .main-content h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .main-content p {
+            text-align: justify;
+            line-height: 1.7;
+            font-size: 15px;
+            color: #444;
+        }
+
+        footer {
+            border-top: 2px solid #333;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            color: #555;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- BAGIAN BANNER / IMAGE ATAS -->
+        <div class="header-image">
+            <img src="../imageutama/banner.jpeg" alt="Banner Website">
+        </div>
+
+        <!-- Menu Navigasi -->
+        <div class="nav-links">
+            <a href="utama.html">Home</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+        <!-- Bagian Produk: 2 Kolom Utama (Kiri & Kanan) -->
+        <div class="content-section">
+            
+            <!-- ================= KOLOM KIRI (Berisi 3 Produk) ================= -->
+            <div class="column-group">
+                <!-- Produk Kiri 1 -->
+                <div class="card">
+                    <div class="product-img">
+                        <img src="../imageutama/produk 1.jpeg" alt="Produk 1">
+                    </div>
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 1</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk pertama. Produk ini dirancang dengan kualitas terbaik.</p>
+                    </div>
+                </div>
+
+                <!-- Produk Kiri 2 -->
+                <div class="card">
+                    <div class="product-img">
+                        <img src="../imageutama/produk 2.jpeg" alt="Produk 2">
+                    </div>
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 2</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk kedua. Menawarkan performa optimal serta tampilan modern.</p>
+                    </div>
+                </div>
+
+                <!-- Produk Kiri 3 -->
+                <div class="card">
+                    <div class="product-img">
+                        <img src="../imageutama/produk 1.jpeg" alt="Produk 3">
+                    </div>
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 3</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk ketiga. Cocok untuk menemani aktivitas harian Anda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= KOLOM KANAN (Berisi 3 Produk) ================= -->
+            <div class="column-group">
+                <!-- Produk Kanan 1 -->
+                <div class="card">
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 4</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk keempat. Menawarkan performa optimal serta tampilan modern yang sangat elegan.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="../imageutama/produk 2.jpeg" alt="Produk 4">
+                    </div>
+                </div>
+
+                <!-- Produk Kanan 2 -->
+                <div class="card">
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 5</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk kelima. Memberikan kenyamanan serta fleksibilitas tinggi.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="../imageutama/produk 1.jpeg" alt="Produk 5">
+                    </div>
+                </div>
+
+                <!-- Produk Kanan 3 -->
+                <div class="card">
+                    <div class="card-desc">
+                        <h4>Produk Unggulan 6</h4>
+                        <p>Ini adalah deskripsi singkat untuk produk keenam. Pilihan tepat untuk solusi kebutuhan modern Anda.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="../imageutama/produk 2.jpeg" alt="Produk 6">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bagian Content Utama -->
+        <div class="main-content">
+            <h3>Content</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
+            </p>
+        </div>
+
+        <!-- Footer Copyright -->
+        <footer>
+            <p>Copyright &copy; 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
